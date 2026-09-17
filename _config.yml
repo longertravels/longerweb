@@ -1,3 +1,4 @@
-exclude:/n  - drafts
+exclude:
+  - drafts
   - CONTENT-PLAN.md
   - README.md
