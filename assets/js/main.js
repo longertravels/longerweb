@@ -24,8 +24,8 @@ document.addEventListener('DOMContentLoaded', function () {
       e.preventDefault();
 
       // 蜜罐：被机器人填了就当作成功，静默返回
-      var gotcha = form.querySelector('[name="_gotcha"]');
-      if (gotcha && gotcha.value) return;
+      var bot = form.querySelector('[name="botcheck"]');
+      if (bot && bot.checked) return;
 
       if (btn) { btn.disabled = true; btn.textContent = '发送中… / Sending…'; }
       if (msg) { msg.textContent = ''; msg.style.display = 'none'; }

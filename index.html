@@ -275,13 +275,14 @@
         </div>
       </div>
       <div>
-        <!-- ↓↓ 表单：把 action 换成你的 Formspree 地址（https://formspree.io/f/xxxxxxx） -->
-        <form class="contact-form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST" style="display:grid;gap:12px;">
-          <input type="hidden" name="_subject" value="Website enquiry · longertravels.com">
-          <input type="text" name="_gotcha" style="display:none" tabindex="-1" autocomplete="off">
+        <!-- ↓↓ 表单：access_key 填 Web3Forms 密钥（https://web3forms.com 免费获取，250 封/月） -->
+        <form class="contact-form" action="https://api.web3forms.com/submit" method="POST" style="display:grid;gap:12px;">
+          <input type="hidden" name="access_key" value="YOUR_WEB3FORMS_KEY">
+          <input type="hidden" name="subject" value="Website enquiry · longertravels.com 网站合作咨询">
+          <input type="checkbox" name="botcheck" style="display:none" tabindex="-1" autocomplete="off">
           <input type="text" name="name" placeholder="Your name / 你的名字" required
             style="padding:12px 14px;border:1px solid var(--line);border-radius:10px;font-family:inherit;font-size:14.5px;background:var(--white);">
-          <input type="email" name="_replyto" placeholder="Email（我会回这个邮箱）" required
+          <input type="email" name="email" placeholder="Email（我会回这个邮箱）" required
             style="padding:12px 14px;border:1px solid var(--line);border-radius:10px;font-family:inherit;font-size:14.5px;background:var(--white);">
           <textarea name="message" rows="5" placeholder="Tell me about your brand and what you need / 说说你的品牌和需求" required
             style="padding:12px 14px;border:1px solid var(--line);border-radius:10px;font-family:inherit;font-size:14.5px;background:var(--white);resize:vertical;"></textarea>
