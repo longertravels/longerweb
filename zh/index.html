@@ -275,15 +275,18 @@
         </div>
       </div>
       <div>
-        <!-- ↓↓ 表单：把 action 换成你的 Formspree 地址（见 README 第 5 步） -->
-        <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST" style="display:grid;gap:12px;">
+        <!-- ↓↓ 表单：把 action 换成你的 Formspree 地址（https://formspree.io/f/xxxxxxx） -->
+        <form class="contact-form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST" style="display:grid;gap:12px;">
+          <input type="hidden" name="_subject" value="网站合作咨询 · longertravels.com">
+          <input type="text" name="_gotcha" style="display:none" tabindex="-1" autocomplete="off">
           <input type="text" name="name" placeholder="你的名字 / 品牌名" required
             style="padding:12px 14px;border:1px solid var(--line);border-radius:10px;font-family:inherit;font-size:14.5px;background:var(--white);">
-          <input type="email" name="email" placeholder="邮箱" required
+          <input type="email" name="_replyto" placeholder="邮箱（我用这个回复你）" required
             style="padding:12px 14px;border:1px solid var(--line);border-radius:10px;font-family:inherit;font-size:14.5px;background:var(--white);">
           <textarea name="message" rows="5" placeholder="说说你的品牌和需求" required
             style="padding:12px 14px;border:1px solid var(--line);border-radius:10px;font-family:inherit;font-size:14.5px;background:var(--white);resize:vertical;"></textarea>
           <button type="submit" class="btn btn-primary" style="border:none;justify-self:start;">发送</button>
+          <p class="form-msg" style="display:none;font-size:14px;line-height:1.7;margin:0;"></p>
         </form>
       </div>
     </div>
@@ -299,7 +302,7 @@
           扫码关注，travel notes 也发在朋友圈。
         </p>
         <p style="font-size:14px;margin:0 0 10px;">
-          📰 最新一篇：<a href="https://mp.weixin.qq.com/s/jDhvz_ruIXiBwYboAJqy0A" target="_blank" rel="noopener" style="color:var(--teal);text-decoration:underline;">《同一片海，8年后我又走了一遍菲律宾》</a>
+          📰 最新一篇：<a href="https://mp.weixin.qq.com/s/cVVEOJBG5v1j7vik8mnjRg" target="_blank" rel="noopener" style="color:var(--teal);text-decoration:underline;">《不到 6K，我在马尔代夫住了 8 天 7 晚》</a>
         </p>
         <p style="font-size:12.5px;color:var(--ink-3);margin:0;">微信扫一扫上方二维码 · 每月 2–4 篇更新</p>
       </div>
